@@ -1,3 +1,43 @@
+.insertion{
+    position: relative;    
+}
+.logs{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(128, 128, 128, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logs_body{
+    width: 85%;
+    height: 85%;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.logs__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.logs__content{
+    text-align: left;
+    flex: 1;
+    overflow: auto;
+}
+.logs__content > div{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid grey;
+}
+.logs__content > div > h2{
+    text-align: center;
+    margin: 0.5rem 0;
+}
 .bars{
     display: flex;
     justify-content: space-around;
