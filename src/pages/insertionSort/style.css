@@ -1,19 +1,21 @@
-.insertion{
-    margin-top: 5rem;
-}
-
 .bars{
     display: flex;
-    margin: 2rem auto;
     justify-content: space-around;
-    max-width: 500px;
-    background: green;
     padding-bottom: 1rem;
 }
 .bar{
-    width: 20px;
     background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.thisOne{
-    background: gray !important;
+.thisOneInPlace{
+    background:  green !important;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background: rgb(0, 238, 255);
+    padding: 2rem 0;
 }
