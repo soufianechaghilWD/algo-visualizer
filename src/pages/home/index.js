@@ -7,6 +7,8 @@ function Index() {
             <a href='/insertion_sort'>Insertion sort</a>
             <br />
             <a href='/selection_sort'>Selection Sort</a>
+            <br />
+            <a href='/merge_sort'>Merge Sort</a>
         </div>
     );
 }

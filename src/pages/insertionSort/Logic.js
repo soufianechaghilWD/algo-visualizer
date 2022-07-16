@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import generateArray from "../../helpers/generateArray";
 
 function Logic() {
   const [arrayToSort, setArrayToSort] = useState([]);
@@ -11,19 +12,6 @@ function Logic() {
   const [logs, setLogs] = useState([]);
   const [showLogs, setShlowLogs] = useState(false);
 
-  const generateArray = (num) => {
-    const res = [];
-
-    while (res.length < num) {
-      const randomNumber = Math.floor(Math.random() * 2 * num);
-      if (
-        randomNumber !== 0 &&
-        res.find((x) => x === randomNumber) === undefined
-      )
-        res.push(randomNumber);
-    }
-    return res;
-  };
 
   const setTim = () => {
     return new Promise((resolve) => {
