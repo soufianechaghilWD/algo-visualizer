@@ -1,4 +1,4 @@
-import React, {  } from 'react';
+import React from 'react';
 
 function Index() {
     return (
@@ -9,6 +9,8 @@ function Index() {
             <a href='/selection_sort'>Selection Sort</a>
             <br />
             <a href='/merge_sort'>Merge Sort</a>
+            <br />
+            <a href='/bubble_sort'>Quick Sort</a>
         </div>
     );
 }
