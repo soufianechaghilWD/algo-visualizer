@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./style.css";
 import Logic from "./Logic";
 
 function Index() {

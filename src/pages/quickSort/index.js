@@ -1,6 +1,5 @@
 import React from "react";
 import Logic from "./Logic";
-import './style.css'
 
 function Index() {
 

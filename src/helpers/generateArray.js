@@ -8,4 +8,15 @@ const generateArray = (num) => {
   }
   return res;
 };
+
+const getIndex = (len) => {
+
+  const random = Math.floor(Math.random() * (len - 1))
+
+  return random
+
+}
+
+export {getIndex}
+
 export default generateArray;

@@ -5,7 +5,7 @@ import Home from './pages/home'
 import Selection from "./pages/selectionSort"
 import Merge from './pages/mergeSort'
 import Bubble from './pages/quickSort'
-
+import LinearSearch from './pages/linearSearch'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path='/selection_sort' element={<Selection />} />
           <Route path='/merge_sort' element={<Merge />} />
           <Route path='/bubble_sort' element={<Bubble />} />
+          <Route path='/linear_search' element={<LinearSearch />} />
           <Route path='/' element={<Home />} />
         </Routes>        
       </div>  

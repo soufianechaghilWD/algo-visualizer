@@ -11,6 +11,8 @@ function Index() {
             <a href='/merge_sort'>Merge Sort</a>
             <br />
             <a href='/bubble_sort'>Quick Sort</a>
+            <br />
+            <a href='/linear_search'>Linear Search</a>
         </div>
     );
 }
