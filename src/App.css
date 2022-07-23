@@ -2,21 +2,21 @@
   text-align: center;
 }
 
-.insertion{
-  position: relative;    
+.insertion {
+  position: relative;
 }
-.logs{
+.logs {
   position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(128, 128, 128, .4);
+  background: rgba(128, 128, 128, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logs_body{
+.logs_body {
   width: 85%;
   height: 85%;
   background: white;
@@ -24,54 +24,57 @@
   display: flex;
   flex-direction: column;
 }
-.logs__header{
+.logs__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.logs__content{
+.logs__content {
   text-align: left;
   flex: 1;
   overflow: auto;
 }
-.logs__content > div{
+.logs__content > div {
   padding: 0.5rem 0;
   border-bottom: 1px solid grey;
 }
-.logs__content > div > h2{
+.logs__content > div > h2 {
   text-align: center;
   margin: 0.5rem 0;
 }
-.bars{
+.bars {
   display: flex;
   justify-content: space-around;
   padding-bottom: 1rem;
 }
-.bar{
+.bar {
   background: red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.thisOneInPlace{
-  background:  green !important;
+.thisOneInPlace {
+  background: green !important;
 }
-.options{
+.options {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
   background: rgb(0, 238, 255);
   padding: 2rem 0;
 }
-.pivot{
+.pivot {
   background: yellow !important;
 }
-.thisOneInPlace{
-  background:  green !important;
+.thisOneInPlace {
+  background: green !important;
 }
-.isThatWhatWeWant{
+.isThatWhatWeWant {
   background-color: gray;
 }
-.areWeHere{
-  background: yellow;    
+.areWeHere {
+  background: yellow;
+}
+.outRange {
+  background: black;
 }

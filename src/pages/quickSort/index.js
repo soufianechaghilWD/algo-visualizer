@@ -2,8 +2,14 @@ import React from "react";
 import Logic from "./Logic";
 
 function Index() {
-
-    const {sorting, generateNewArray, sort, handleLength, arrayToSort, returnBarForNum} = Logic()
+  const {
+    sorting,
+    generateNewArray,
+    sort,
+    handleLength,
+    arrayToSort,
+    returnBarForNum,
+  } = Logic();
 
   return (
     <div className="bubble">

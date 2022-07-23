@@ -12,7 +12,6 @@ function Logic() {
   const [logs, setLogs] = useState([]);
   const [showLogs, setShlowLogs] = useState(false);
 
-
   const setTim = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -21,41 +20,35 @@ function Logic() {
     });
   };
 
-
   const selectionSort = async (arr) => {
+    const rr = [];
+    setSorting(true);
 
-        const rr = [];
-        setSorting(true);
+    for (let i = 0; i < arr.length; i++) {
+      let min = i;
+      for (let j = i; j < arr.length; j++) {
+        if (arr[j] < arr[min]) min = j;
+      }
+      const innerLog = `The element ${arr[min]} is the min  so far, so we are going to swap it with ${arr[i]}`;
+      rr.push({ title: false, body: innerLog });
 
+      if (min != i) {
+        const tmp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = tmp;
+      }
 
-        for(let i = 0; i < arr.length; i++){
-            let min = i
-            for(let j = i; j < arr.length; j++){
-                if (arr[j] < arr[min]) min = j
-            }
-            const innerLog = `The element ${arr[min]} is the min  so far, so we are going to swap it with ${arr[i]}`;
-            rr.push({ title: false, body: innerLog });
+      const afterLog = `The array after the swap is: `;
+      rr.push({ title: false, body: afterLog, array: JSON.stringify(arr) });
 
-            if (min != i){        
-                const tmp = arr[i]
-                arr[i] = arr[min]
-                arr[min] = tmp
-            }
+      setArrayToSort(arr);
+      forceUpdate();
 
-            const afterLog = `The array after the swap is: `;
-            rr.push({ title: false, body: afterLog, array: JSON.stringify(arr) });
-
-
-            setArrayToSort(arr);
-            forceUpdate();
-
-            await setTim();
-        }
-        setLogs(logs.concat(rr));
-        setSorting(false);
+      await setTim();
     }
-
-  
+    setLogs(logs.concat(rr));
+    setSorting(false);
+  };
 
   const sort = () => {
     selectionSort(arrayToSort);
@@ -96,7 +89,7 @@ function Logic() {
   const generateNewArray = () => {
     const newOne = generateArray(length);
     setArrayToSort(newOne);
-    var sorted = [...newOne].sort((a, b) => a - b)
+    var sorted = [...newOne].sort((a, b) => a - b);
     setSortedArray(sorted);
     setLogs([
       {
@@ -121,7 +114,17 @@ function Logic() {
     else setSpeed(50);
   };
 
-  return {sorting, generateNewArray, sort, handleLength, arrayToSort, returnBarForNum, showLogs, setShlowLogs, logs}
+  return {
+    sorting,
+    generateNewArray,
+    sort,
+    handleLength,
+    arrayToSort,
+    returnBarForNum,
+    showLogs,
+    setShlowLogs,
+    logs,
+  };
 }
 
 export default Logic;

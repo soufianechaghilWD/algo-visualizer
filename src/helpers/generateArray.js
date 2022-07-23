@@ -10,13 +10,11 @@ const generateArray = (num) => {
 };
 
 const getIndex = (len) => {
+  const random = Math.floor(Math.random() * (len - 1));
 
-  const random = Math.floor(Math.random() * (len - 1))
+  return random;
+};
 
-  return random
-
-}
-
-export {getIndex}
+export { getIndex };
 
 export default generateArray;

@@ -2,10 +2,17 @@ import React, { useEffect } from "react";
 import Logic from "./Logic";
 
 function Index() {
-
-  const {sorting, generateNewArray, sort, setShlowLogs, handleLength, arrayToSort, returnBarForNum, showLogs, logs} = Logic()
-
-
+  const {
+    sorting,
+    generateNewArray,
+    sort,
+    setShlowLogs,
+    handleLength,
+    arrayToSort,
+    returnBarForNum,
+    showLogs,
+    logs,
+  } = Logic();
 
   return (
     <div className="insertion">
@@ -49,8 +56,9 @@ function Index() {
                       </h2>
                     ) : (
                       <>
-                        <p>{ele.body} {ele?.array && <b>{ele.array}</b>}</p>
-                        
+                        <p>
+                          {ele.body} {ele?.array && <b>{ele.array}</b>}
+                        </p>
                       </>
                     )}
                   </div>

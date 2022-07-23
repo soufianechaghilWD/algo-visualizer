@@ -12,7 +12,6 @@ function Logic() {
   const [logs, setLogs] = useState([]);
   const [showLogs, setShlowLogs] = useState(false);
 
-
   const setTim = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -90,7 +89,7 @@ function Logic() {
   const generateNewArray = () => {
     const newOne = generateArray(length);
     setArrayToSort(newOne);
-    var sorted = [...newOne].sort((a, b) => a - b)
+    var sorted = [...newOne].sort((a, b) => a - b);
     setSortedArray(sorted);
     setLogs([
       {
@@ -115,8 +114,17 @@ function Logic() {
     else setSpeed(5);
   };
 
-
-  return {sorting, generateNewArray, sort, handleLength, arrayToSort, returnBarForNum, showLogs, setShlowLogs, logs}
+  return {
+    sorting,
+    generateNewArray,
+    sort,
+    handleLength,
+    arrayToSort,
+    returnBarForNum,
+    showLogs,
+    setShlowLogs,
+    logs,
+  };
 }
 
 export default Logic;

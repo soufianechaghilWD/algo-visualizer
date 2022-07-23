@@ -2,8 +2,6 @@ import React, { useEffect, useState, useCallback } from "react";
 import generateArray from "../../helpers/generateArray";
 
 function Logic() {
-
-
   const [arrayToSort, setArrayToSort] = useState([]);
   const [length, setLength] = useState(6);
   const [, updateState] = useState();
@@ -50,27 +48,22 @@ function Logic() {
     }
   };
 
-
-
   const selectionMerge = async (arr, start, finish) => {
     if (finish - start <= 1) return arr;
 
     const mid = parseInt((finish - start) / 2);
 
-
     await selectionMerge(arr, start, start + mid);
 
     await selectionMerge(arr, start + mid, finish);
 
-
     await selectionSort(arr, start, finish);
-    
   };
 
   const sort = async () => {
-    setSorting(true)
+    setSorting(true);
     await selectionMerge(arrayToSort, 0, arrayToSort.length);
-    setSorting(false)
+    setSorting(false);
   };
 
   const handleLength = (e) => {

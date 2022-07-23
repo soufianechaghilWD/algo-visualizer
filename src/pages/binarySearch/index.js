@@ -14,8 +14,8 @@ function Index() {
   } = Logic();
 
   return (
-    <div className="linear">
-      <h1>Linear Search</h1>
+    <div>
+      <h1>Binary Search</h1>
       <div className="options">
         <button disabled={searching === true} onClick={generateNewArray}>
           Generate new array
@@ -45,4 +45,5 @@ function Index() {
     </div>
   );
 }
+
 export default Index;
