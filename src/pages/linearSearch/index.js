@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../../helpers/Nav";
 import Logic from "./Logic";
 
 function Index() {
@@ -15,7 +16,7 @@ function Index() {
 
   return (
     <div className="linear">
-      <h1>Linear Search</h1>
+      <Nav algo={'Linear Search'}/>
       <div className="options">
         <button disabled={searching === true} onClick={generateNewArray}>
           Generate new array

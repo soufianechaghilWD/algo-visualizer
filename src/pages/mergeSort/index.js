@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../../helpers/Nav";
 import Logic from "./Logic";
 
 function Index({}) {
@@ -13,7 +14,7 @@ function Index({}) {
 
   return (
     <div className="merge">
-      <h1>Merge sort</h1>
+      <Nav algo={"Merge sort"} />
       <div className="options">
         <button disabled={sorting === true} onClick={generateNewArray}>
           Generate new array

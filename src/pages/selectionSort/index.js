@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Nav from "../../helpers/Nav";
 import Logic from "./Logic";
 
 function Index({}) {
@@ -16,7 +17,7 @@ function Index({}) {
 
   return (
     <div className="insertion">
-      <h1>Selection sort</h1>
+      <Nav algo={"Selection sort"} />
       <div className="options">
         <button disabled={sorting === true} onClick={generateNewArray}>
           Generate new array

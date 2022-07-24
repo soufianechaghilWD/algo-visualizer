@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../../helpers/Nav";
 import Logic from "./Logic";
 
 function Index() {
@@ -13,7 +14,7 @@ function Index() {
 
   return (
     <div className="bubble">
-      <h1>Quick Sort</h1>
+      <Nav algo={"Quick Sort"} />
       <div className="options">
         <button disabled={sorting === true} onClick={generateNewArray}>
           Generate new array
